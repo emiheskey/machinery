@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Machinery.ng | Machine detail</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/datepicker.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head>
+<body>
+
+  <!-- Top
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="top">
+  	<div class="container">
+        	<div class="four columns">
+            	<img src="images/logo-white.png" class="logo">
+           </div>
+           <div class="eight columns">
+           	
+                <a href="#" class="button button-list">List a Machinery</a>
+                <a href="#" class="button button-login">Login</a>
+                <ul class="menu">
+                   <li><a href="#">About us</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Register</a></li>
+            	</ul>
+           </div>
+    </div>
+  </div>
+    <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="header">
+  	<div class="container">
+    	<h4 class="text-center">Make a new search for Machineries for Rent in Nigeria</h4>
+		<form>
+      <div class="row">
+        <div class="three columns">
+          <label for="what">What do you need?</label>
+          <select class="u-full-width" id="what">
+          <option value="Option 0" selected>Select category</option>
+            <option value="Option 1">Road Construction</option>
+            <option value="Option 2">Drilling</option>
+            <option value="Option 3">Power generation</option>
+            <option value="Option 4">Earth moving</option>
+            <option value="Option 5">Cranes</option>
+            <option value="Option 6">Forklifts</option>
+          </select>
+        </div>
+        <div class="three columns">
+			<label for="where">Where do you need it?</label>
+          <select class="u-full-width" id="what">
+          <option value="Option 0" selected>Select location</option>
+            <option value="Option 1">Portharcourt</option>
+            <option value="Option 2">Calabar</option>
+            <option value="Option 3">Warri</option>
+            <option value="Option 4">Asaba</option>
+            <option value="Option 5">Abuja</option>
+            <option value="Option 6">Lagos</option>
+          </select>
+        </div>
+        <div class="three columns">
+			<label for="when">When do you need it?</label>
+          <input data-toggle="datepicker" class="u-full-width" placeholder="When do you need it?" type="text">
+        </div>
+        <div class="three columns">
+        	<div style="margin-top: 30px;"></div>
+			<input class="button button-primary" value="SEARCH" type="submit">
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  
+    <!-- Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container content">
+   <div class="breadcrumb">
+   	<a href="#">Home</a> <i class="fa fa-angle-double-right"></i>
+    <a href="#">Forklifts</a> <i class="fa fa-angle-double-right"></i>
+    Industrial Forklifts
+   </div>
+    	<div class="row">
+        	<div class="eight columns item-detail">
+            	<div class="tag">
+                <div class="row">
+                	<div class="eight columns">
+                    <h4>Industrial Forklifts</h4>
+                    <p><i class="fa fa-map-marker"></i> PortHarcourt <span>|</span> Added 2 days ago</p>
+                   </div>
+                   <div class="four columns text-right">
+                   	<h4>N120,000 <br><span>per day</span></h4>
+                   </div>
+                </div>
+               </div>
+               <img src="images/catalog/forklift.jpg">
+               
+               <h5>Description</h5>
+               <hr>
+               <p>The Teletruk forklift provides unrivalled forward visibility, forward reach and large lift capacity on a compact machine. It enables you to change attachments quickly and easily and the 111 degrees of carriage rotation allows you to pick and place loads safely.</p>
+               <h5>Features</h5>
+               <hr>
+               <ul>
+               	<li>Capacity: 1200kg</li>
+                	<li>Maximum Lift Capacity: 4500kg</li>
+                  <li>Maximum Lift Height: 4.5m 
+               </ul>
+           </div>
+           <div class="four columns">
+           	<div class="contact-owner">
+            		<h4>Contact Owner</h4>
+                    <h5>Call Owner</h5>
+					<p>For an immediate response call this seller</p>
+						 
+						<div id="phone">
+                       	<button onclick="myFunction()">Show number</button> 
+                       </div>
+                      <script>
+					  		function myFunction() {
+							  var x = document.getElementById("phone");
+							  if (x.innerHTML === "Show number") {
+								x.innerHTML = "Swapped text!";
+							  } else {
+								x.innerHTML = "<h5>+2348060756234</h4>";
+							  }
+							}
+						</script>
+                        <br>
+                     <h5>Send Owner an email</h5>
+                     <form>
+                  <div class="row">
+                    <div class="twelve columns">
+                      <label for="name">Your name *</label>
+                      <input class="u-full-width" placeholder="Your name" id="name" type="text">
+                    </div>
+                    <div class="twelve columns">
+                      <label for="email">Your email</label>
+                      <input class="u-full-width" placeholder="Your email" id="email" type="text">
+                    </div>
+                    <div class="twelve columns">
+                      <label for="phone">Your phone</label>
+                      <input class="u-full-width" placeholder="Your number" id="phone" type="text">
+                    </div>
+                    <div class="twelve columns">
+                    <label for="message">Message</label>
+  <textarea class="u-full-width text-7" placeholder="I saw this machinery for rent at www.machinery.ng/listID and would like some more information. Could you please contact me as soon as possible?" id="message" rows="7"></textarea>
+  					</div>
+                   </div>
+                    <input class="button button-contact" value="Submit" type="submit">
+                   </form>
+            	</div>
+           </div>
+        </div>
+       <!-- End details -->
+        <div class="related-list">
+        	<h4>Related listings</h4>
+        	<div class="row">
+           <div  class="three columns">
+        	<a href="list-detail.html" class="featured-item">
+            	<img src="images/feature/4.jpg">
+                <div class="list-name">JCB Rollers</div>
+                <div class="location"><i class="fa fa-map-marker"></i> Calabar</div>
+                <div class="price">N170,000 <span>per day</span></div>
+           </a>
+        </div>
+        <div  class="three columns">
+        	<a href="list-detail.html" class="featured-item">
+            	<img src="images/feature/5.jpg">
+                <div class="list-name">Cranes</div>
+                <div class="location"><i class="fa fa-map-marker"></i> PortHarcourt</div>
+                <div class="price">N175,000 <span>per day</span></div>
+           </a>
+        </div>
+        <div class="three columns">
+        	<a href="list-detail.html" class="featured-item">
+            	<img src="images/feature/6.jpg">
+                <div class="list-name">Power Generation</div>
+                <div class="location"><i class="fa fa-map-marker"></i> PortHarcourt</div>
+                <div class="price">N140,000 <span>per day</span></div>
+           </a>
+        </div>
+        <div  class="three columns">
+        	<a href="list-detail.html" class="featured-item">
+            	<img src="images/feature/5.jpg">
+                <div class="list-name">Cranes</div>
+                <div class="location"><i class="fa fa-map-marker"></i> PortHarcourt</div>
+                <div class="price">N175,000 <span>per day</span></div>
+           </a>
+        </div>
+
+           </div>
+       </div>
+  </div>
+  <div class="subscribe">
+  	<div class="container">
+    	<form>
+        <div class="row">
+            <div class="five columns text-white">
+                <h4>Subscribe to stay updated</h4>
+                <p>Sign up for FREE email alerts on listings</p>
+            </div>
+            <div class="five columns">
+              <input class="u-full-width" placeholder="Type your email here" id="subscribe" type="text" style="margin-top: 20px;">
+            </div>
+            <div class="two columns">
+            	<input class="button button-primary" value="SEARCH" type="submit" style="margin-top: 20px;">
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+  	<div class="container">
+    	<div class="row">
+        	<div class="four columns">
+           	<img src="images/logo-small.png">
+            <p>Machinery.ng is your reliable platform for the getting access to various machineries that are available for rent.</p>
+            <p class="text-gray">&copy; 2018 Machinery.ng. All rights reserved.</p>
+           </div>
+           <div class="three columns">
+           	<h4>Welcome</h4>
+            	<ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Safe Renting</a></li>
+              </ul>
+           </div>
+           <div class="three columns">
+           	<h4>Help</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Safe Renting</a></li>
+              </ul>
+           </div>
+           <div class="two columns">
+           	<h4>We are social</h4>
+            	<div class="social">
+                	<a href="#"><i class="fa fa-facebook-square"></i></a>
+                  <a href="#"><i class="fa fa-twitter-square"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+               </div>
+           </div>
+        </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+</body>
+</html>
