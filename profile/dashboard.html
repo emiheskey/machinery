@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Machinery.ng | Profile</title>
+  <title>Machinery.ng | Dashboard</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -77,8 +77,8 @@
                     <p><a href="#">John Bulus</a></p>
                </div>
                <ul>
-                   <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                  <li><a href="profile.html" class="active"><i class="fa fa-user"></i> My Profile</a></li>
+                   <li><a href="dashboard.html" class="active"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                  <li><a href="profile.html"><i class="fa fa-user"></i> My Profile</a></li>
                   <li><a href="your-listings.html"><i class="fa fa-list"></i> Your Listings</a></li>
                   <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
                </ul>
@@ -87,30 +87,50 @@
         <!-- Dashboard -->
         <div class="nine columns">
         	<div class="dashboard">
-            	<h4><i class="fa fa-user"></i> User Profile</h4>
-                	<form>
-                  <div class="row">
-                    <div class="six columns">
-                      <label for="fname">First name</label>
-                      <input class="u-full-width" placeholder="John" value="John" id="fname" type="text">
-                    </div>
-                    <div class="six columns">
-                      <label for="lname">Last name</label>
-                      <input class="u-full-width" placeholder="Bulus" value="Bulus" id="lname" type="text">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="six columns">
-                      <label for="email">Your email (disabled)</label>
-                      <input class="u-full-width" placeholder="test@mailbox.com" value="test@mailbox.com" id="email" type="email" disabled>
-                    </div>
-                    <div class="six columns">
-                      <label for="exampleEmailInput">Phone Number</label>
-                      <input class="u-full-width" placeholder="08061234567" value="08061234567" id="phone" type="text">
-                    </div>
-                  </div>
-                  <p><a href="#" class="button button-primary">Save changes</a></p>
-                  </form>
+            	<h4><i class="fa fa-dashboard"></i> Dashboard</h4>
+                <div class="analytics">
+                	<div class="row">
+                    	<div class="six columns item-analytics orange">
+                        <h3>3</h3>
+                        <p>No. of Machinery</p>
+                      </div>
+                      <div class="six columns item-analytics orange">
+                        <h3>359</h3>
+                        <p>No. of views</p>
+                      </div>
+                   </div>
+                </div>
+                <!-- Recent Listings -->
+                <h4><i class="fa fa-list"></i> Your RecentListings</h4>
+                <table class="u-full-width">
+                	<thead>
+                    	<tr>
+                        	<th>S/N</th>
+                         <th>Name</th>
+                         <th>Category</th>
+                         <th>Price per day</th>
+                         <th></th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                   	<tr>
+                    		<td>1</td>
+                         <td>JCB Roller</td>
+                         <td>Road Construction</td>
+                         <td>N120,000</td>
+                         <td></td>
+                      </tr>
+                      <tr>
+                    		<td>2</td>
+                         <td>Caterpillar Crane</td>
+                         <td>Construction</td>
+                         <td>N220,000</td>
+                         <td></td>
+                      </tr>
+                   </tbody>
+                  </table>
+                  <p><a href="#" class="button" style="margiin-right: 10px;">View all listings</a> 
+						<a href="#modal-one" class="button button-primary" >Add a machinery</a></p>
             </div>
         </div>       
   </div>
