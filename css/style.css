@@ -6,6 +6,9 @@ body {
 	margin: 0; padding: 0;
 }
 
+body.owner {
+	background: #333; 
+}
 .clearfix {
 	clear: both;
 }
@@ -19,20 +22,28 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 1px;
+} 
+.top-pager {
+	background: #333;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 .top {
 	height: 80px;
 	padding: 0px;
 	width: 100%;
-	background: #5900B2;
+	background: #FCB026;
 	-webkit-box-shadow: 0px 2px 17px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 17px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 17px -1px rgba(0,0,0,0.75);
-	border-bottom: 1px solid #63C;
+	border-bottom: 1px solid #666;
 	overflow: hidden;
 	position: fixed;
-	z-index: 1;
-	top: 0;
+	z-index: 2;
+	top: 10;
 }
 .top .container {
 	padding: 20px 0px 0px 0px;
@@ -50,47 +61,52 @@ ul.menu li {
 }
 ul.menu li a {
 	display: block;
-	color: #fff;
+	color: #333;
 	padding: 5px 0px;
-	border-bottom: 3px solid #5900B2;
+	border-bottom: 3px solid #FCB026;
 	text-decoration: none;
 }
 ul.menu li a:hover {
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #333;
 }
 /* Button */
 .button-login {
-	color: #fff;
-	border: 2px solid #FFF;
+	color: #333;
+	border: 2px solid #333;
 	background: transparent;
 	margin-right: 5px;
 	float: right;
+	padding-top: -15px;
 }
 .button-login:hover {
-	color: #5900B2;
+	color: #333;
 	background: #fff;
 	border: 2px solid #639;
 }
 
 .button-list {
 	color: #fff;
-	border: 2px solid #F60;
-	background: #F60;
+	border: 2px solid #333;
+	background: #333;
 	float: right;
 }
 .button-list:hover {
 	color: #fff;
-	border: 2px solid #C90;
-	background: #C90;
+	border: 2px solid #333;
+	background: #000;
 }
 
 .header {
 	min-height: 80px;
 	padding: 100px 10px 0px 10px;
 	margin: 15px auto;
+	font-weight:bold;
 }
 .header label, .header h4 {
-	color: #fff; font-weight: 300;
+	color: #333; font-weight: 300;
+}
+.header h3 {
+	color: #fff; font-size: 24px; padding-top: 20px;
 }
 .header form {
 	margin: 0px;
@@ -203,7 +219,7 @@ a.featured-item .price span {
 }
 
 .subscribe {
-	background: #639;
+	background: #FCB026;
 	padding: 20px;
 	min-height: 50px;
 	margin-top: -50px;
@@ -955,3 +971,273 @@ body.login-register {
 	font-size: 25px;
 	text-transform: uppercase;
 }
+
+/* Owner */
+.bg-gray10 {
+	background: #f3f3f3;
+}
+.sidebar {
+	padding: 5px;
+	min-height: 200px;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.45);
+	box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.45);
+}
+.sidebar .profile-img {
+	text-align: center;
+	padding: 20px 0px 10px 0px;
+	border-bottom: 1px solid #f9f9f9;
+}
+.sidebar .profile-img img {
+	width: 100px; 
+	margin: 0 auto;
+}
+.sidebar .profile-img p {
+	margin: 10px 0px;
+}
+.sidebar ul {
+	margin: 5px 0px;
+	padding: 0;
+}
+.sidebar ul li {
+	display: block;
+	margin: 0;
+}
+.sidebar ul li a {
+	display: block;
+	padding: 8px 10px;
+	border-bottom: 1px solid #f9f9f9;
+	text-align: left;
+	text-decoration: none;
+	color: #666;
+}
+.sidebar ul li a i {
+	width: 30px;
+	margin: 0px 8px 0px 5px;
+}
+.sidebar ul li a:hover {
+	background: #f9f9f9;
+}
+
+/* Dashboard */
+.dashboard {
+	padding: 20px;
+	-webkit-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.15);
+	min-height: 350px;
+	border-radius: 5px;
+}
+.dashboard h4 {
+	font-size: 23px;
+}
+.dashboard h4 i {
+	margin-right:5px;
+}
+
+.analytics {
+	margin: 10px auto;
+}
+.analytics .item-analytics {
+	padding: 10px;
+	border-radius: 5px;
+	min-height: 80px;
+	text-align: center;
+	font-size: 18px;
+}
+.analytics .orange { background: orange; color: #fff;}
+.analytics h3 { margin: 0; padding: 0;}
+
+
+/* Ads */
+img.ad-img {
+	padding: 5px;
+	background: #f3f3f3;
+	border: 1px solid #f9f9f9;
+	max-width: 100%;
+	min-width: 100%;
+	display: block;
+}
+
+#fdw-pricing-table {
+	margin:0 auto;
+	text-align: center;
+	width: 700px;
+	zoom: 1;
+}
+
+#fdw-pricing-table:before, #fdw-pricing-table:after {
+	content: "";
+	display: table
+}
+
+#fdw-pricing-table:after {
+	clear: both
+}
+
+/* --------------- */	
+
+#fdw-pricing-table .plan {   
+	background: #fff;      
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 20px;
+	width: 40%;
+	height: 400px;
+	float: left;
+	_display: inline; /* IE6 double margin fix */
+	position: relative;
+	margin: 0 5px;
+	margin-bottom: 20px;
+	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+}
+
+#fdw-pricing-table .plan:after {
+	z-index: -1; 
+	position: absolute; 
+	content: "";
+	bottom: 10px;
+	right: 4px;
+	width: 100%; 
+	top: 80%; 
+	-webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+	-moz-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	-webkit-transform: rotate(3deg);    
+	-moz-transform: rotate(3deg);   
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);	
+}	
+
+#fdw-pricing-table .popular-plan {
+	padding: 30px 20px;   
+}
+
+/* --------------- */	
+
+#fdw-pricing-table .header2 {
+	position: relative;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 40px;
+	margin: -20px -20px 20px -20px;
+	border-bottom: 8px solid;
+	background-color: #eee;
+	background-image: -moz-linear-gradient(#fff,#eee);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+	background-image: -webkit-linear-gradient(#fff, #eee);
+	background-image: -o-linear-gradient(#fff, #eee);
+	background-image: -ms-linear-gradient(#fff, #eee);
+	background-image: linear-gradient(#fff, #eee);
+}
+
+#fdw-pricing-table .header2:after {
+	position: absolute;
+	bottom: -8px; left: 0;
+	height: 3px; width: 100%;
+	content: '';
+	background-image: url(../img/bar.png);
+}
+
+#fdw-pricing-table .popular-plan .header2 {
+	margin-top: -40px;
+	padding-top: 40px;		
+}
+
+#fdw-pricing-table .plan1 .header2{
+	border-bottom-color:  #54BBEE;
+}
+
+#fdw-pricing-table .plan2 .header2{ 
+	border-bottom-color: #4AA1C7;
+}
+
+#fdw-pricing-table .plan3 .header2{
+	border-bottom-color: #3B5F98;
+}
+
+#fdw-pricing-table .plan4 .header2{
+	border-bottom-color: #163959;
+}			
+
+/* --------------- */
+
+#fdw-pricing-table .price{
+	font-size: 45px;
+}
+
+#fdw-pricing-table .monthly{
+	font-size: 13px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #999;
+}
+
+#fdw-pricing-table p {
+	font-size: 13px;
+}
+
+/* --------------- */
+
+#fdw-pricing-table ul {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#fdw-pricing-table li {
+	padding: 10px 0;
+	border-bottom: 1px solid #f9f9f9;
+}
+
+/* --------------- */
+	
+#fdw-pricing-table .signup {
+	position: relative;
+	padding: 10px 20px;
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: #72ce3f;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;     
+	text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	opacity: .9;       
+}
+
+#fdw-pricing-table .signup:hover {
+	opacity: 1;       
+}
+
+#fdw-pricing-table .signup:active {
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+}			
+
+#fdw-pricing-table .plan1 .signup{
+	background: #54BBEE;
+}
+
+#fdw-pricing-table .plan2 .signup{
+	background: #4AA1C7;
+}
+
+#fdw-pricing-table .plan3 .signup{
+	background: #3B5F98;
+}
+
+#fdw-pricing-table .plan4 .signup{
+	background: #163959;
+}	
+
+/* end --------------- */
