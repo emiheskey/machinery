@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1;
 }
 .top {
-	height: 80px;
+	min-height: 80px;
 	padding: 0px;
 	width: 100%;
 	background: #FCB026;
@@ -251,12 +251,14 @@ a.featured-item-buy .price span {
 	float: left;
 	padding: 0px 10px;
 	background: #f9f9f9;
-	min-width: 120px;
+	min-width: 19%;
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border: 1px solid #fff;
 	margin: 30px 17px;
+	height: 250px;
+	border-radius: 5px;
 }
 .cat-featured ul li p {
 	margin: 0px;
@@ -267,10 +269,10 @@ a.featured-item-buy .price span {
 	text-decoration: none;
 	color: #333;
 	font-size: 16px;
-
+	text-transform: capitalize;
 }
 .cat-featured ul li a img {
-	width: 100px;
+	width: 180px;
 }
 .cat-featured ul li:hover {
 	background: #fff;
@@ -1397,3 +1399,35 @@ img.ad-img {
 }	
 
 /* end --------------- */
+
+/* Top Search */
+.top-search {
+	background: #333;
+	padding:10px 15px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+	ul.menu {
+		display: none;
+	}
+	.top-search {
+		display: none;
+	}
+	}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

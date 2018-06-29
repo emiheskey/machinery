@@ -73,7 +73,7 @@
                 <a href="#" class="button button-login">Login</a>
                 <ul class="menu">
                    <li><a href="#">About us</a></li>
-                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Categories</a></li>
                    <li><a href="#">Register</a></li>
             	</ul>
            </div>
@@ -84,7 +84,7 @@
   <div class="header">
   	<div class="container">
     	<h4 class="text-center">Search for Machineries for Rent in Nigeria</h4>
-		<form>
+		<form class="top-search">
       <div class="row">
         <div class="three columns">
           <label for="what">What do you need?</label>
@@ -126,6 +126,41 @@
     <!-- Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container content">
+  <!-- Categories -->
+  <div class="cat-featured">
+    	<h4 class="text-center">Popular Categories</h4>
+        <ul>
+        	<li>
+            <a href="#">
+            	<img src="images/icon/cranes.png">
+            	<p>Oil &amp; Gas Machines</p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            	<img src="images/icon/earth.png">
+            	<p>Earth moving/<br>Road Construction Machines</p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            	<img src="images/icon/tractor.png">
+            	<p>Agricultural Machines</p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            	<img src="images/icon/power.png">
+            	<p>Power Generating Machines</p>
+            </a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="text-center">
+        	<p><a href="#" class="button button-primary">View all categories</a></p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
   	<p><img src="images/best-deals.jpg" class="ad-img"></p>
 	<h4 class="text-center">Featured machineries</h4>
     <div class="slider">
@@ -178,52 +213,7 @@
            </a>
         </div>
       </div>
-    <!-- Categories -->
-    <div class="cat-featured">
-    	<h4 class="text-center">Popular Categories</h4>
-        <ul>
-        	<li>
-            <a href="#">
-            	<img src="images/icon/road.png">
-            	<p>Road Construction</p>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-            	<img src="images/icon/earth.png">
-            	<p>Earth Moving</p>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-            	<img src="images/icon/forklift.png">
-            	<p>Forklifts</p>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-            	<img src="images/icon/cranes.png">
-            	<p>Cranes</p>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-            	<img src="images/icon/drill.png">
-            	<p>Drilling Rigs</p>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-            	<img src="images/icon/power.png">
-            	<p>Power Generation</p>
-            </a>
-            </li>
-        </ul>
-        <div class="clearfix"></div>
-        <div class="text-center">
-        	<p><a href="#" class="button button-primary">View all listings</a></p>
-        </div>
-    </div>
+    
     <div class="clearfix"></div>
     <!-- How it works -->
     <div class="how">
@@ -303,6 +293,15 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
